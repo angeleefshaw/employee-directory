@@ -1,19 +1,30 @@
-import React, { Component , useEffect} from "react";
+import React, { Component , useEffect, useState} from "react";
 import API from "../utils/API";
+import ContentContainer from "../pages/directory"
 
 function Employee() {
+    const [name, setName] = useState()
 
-    function getEmployees() {
-        API.search()
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
-    }
+    useEffect(() => {
+        getEmployees()
+    })
 
-    getEmployees();
+   const getEmployees = () => {
+         API.search()
+        .then(res => {
+            setName(res.data.results[0].name.first)
+            
+        }
+        )
+        .catch(err => console.log(err))
+   }; 
+
+    
       
     return(
-        <h1>hello</h1>
+        <ContentContainer name ={name}  />
     )
-}
+    
+};
 
 export default Employee;
