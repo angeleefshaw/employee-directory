@@ -6,7 +6,7 @@ function contentContainer(props) {
         <div>
             <img />
             <div>
-                <h1>Name {props.name} </h1>
+                <h1> {props.first} {props.last} </h1>
                 <ul>
                     <li>{props.email}</li>
                     <li>{props.location}</li>
