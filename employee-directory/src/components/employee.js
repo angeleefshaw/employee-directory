@@ -3,7 +3,7 @@ import API from "../utils/API";
 import ContentContainer from "../pages/Content"
 import "../content.css"
 
-function Employee() {
+function Employee(props) {
     const [first, setFirstName] = useState()
     const [last, setLastName] = useState()
     const [location, setLocation] = useState()
@@ -16,7 +16,7 @@ function Employee() {
     }, [])
 
    const getEmployees = () => {
-         API.search()
+         API.search(props.unique)
         .then(res => {
             setFirstName(res.data.results[0].name.first)
             setLastName(res.data.results[0].name.last)

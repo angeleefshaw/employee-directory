@@ -6,12 +6,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Employee />
-      <Employee />
-      <Employee />
-      <Employee />
-      <Employee />
-      <Employee />
+      <Employee unique ={"foobar"} />
+      <Employee unique = {"foo"}/>
+      <Employee unique = {"gale"} />
+      <Employee unique = {"boot"} />
+      <Employee unique = {"wham"} />
+     
     </div>
   );
 }
