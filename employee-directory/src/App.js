@@ -9,6 +9,9 @@ function App() {
       <Employee />
       <Employee />
       <Employee />
+      <Employee />
+      <Employee />
+      <Employee />
     </div>
   );
 }

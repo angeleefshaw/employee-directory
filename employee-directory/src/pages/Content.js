@@ -5,15 +5,15 @@ function contentContainer(props) {
 
     return (
         <div className = "container">
-            <img />
-            <div>
-                <h1> {props.first} {props.last} </h1>
+            <div className="contact-info">
+                <h1>{props.first} {props.last} </h1>
                 <ul>
-                    <li>{props.email}</li>
-                    <li>{props.location}</li>
-                    <li>{props.phone}</li>
+                    <li>Email: {props.email}</li>
+                    <li>Location: {props.location}</li>
+                    <li>Phone: {props.phone}</li>
                 </ul>
             </div>
+            <img src={props.img} className="profile-img"/>
         </div>
     )
 

@@ -9,6 +9,7 @@ function Employee() {
     const [location, setLocation] = useState()
     const [email, setEmail] = useState()
     const [phoneNumber, setPhoneNumber] = useState()
+    const [img, setImg] = useState()
 
     useEffect(() => {
         getEmployees()
@@ -22,6 +23,8 @@ function Employee() {
             setLocation(res.data.results[0].location.state)
             setEmail(res.data.results[0].email)
             setPhoneNumber(res.data.results[0].phone)
+            setImg(res.data.results[0].picture.large)
+            console.log(res)
                
         })
         .catch(err => console.log(err))
@@ -32,7 +35,7 @@ function Employee() {
     return(
         <div>
             <div className="content">
-            <ContentContainer first ={first} last={last} location={location} email = {email} phone={phoneNumber}/>
+            <ContentContainer img={img} first ={first} last={last} location={location} email = {email} phone={phoneNumber}/>
             </div>
         </div>
     )
