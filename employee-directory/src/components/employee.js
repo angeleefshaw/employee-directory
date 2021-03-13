@@ -1,6 +1,7 @@
 import React, { Component , useEffect, useState} from "react";
 import API from "../utils/API";
 import ContentContainer from "../pages/Content"
+import "../content.css"
 
 function Employee() {
     const [first, setFirstName] = useState()
@@ -18,7 +19,6 @@ function Employee() {
         .then(res => {
             setFirstName(res.data.results[0].name.first)
             setLastName(res.data.results[0].name.last)
-            console.log(res)
             setLocation(res.data.results[0].location.state)
             setEmail(res.data.results[0].email)
             setPhoneNumber(res.data.results[0].phone)
@@ -30,7 +30,11 @@ function Employee() {
     
       
     return(
-        <ContentContainer first ={first} last={last} location={location} email = {email} phone={phoneNumber}/>
+        <div>
+            <div className="content">
+            <ContentContainer first ={first} last={last} location={location} email = {email} phone={phoneNumber}/>
+            </div>
+        </div>
     )
     
 };

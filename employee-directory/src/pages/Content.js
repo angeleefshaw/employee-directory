@@ -1,9 +1,10 @@
 import React from 'react';
+import "../content.css"
 
 function contentContainer(props) {
 
     return (
-        <div>
+        <div className = "container">
             <img />
             <div>
                 <h1> {props.first} {props.last} </h1>

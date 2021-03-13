@@ -1,0 +1,27 @@
+.content {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    border-style: solid;
+    border-color: darkcyan;
+    margin-bottom: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+h1 {
+    font-size: 1.875rem;
+    
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.25rem;
+}
