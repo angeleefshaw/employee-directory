@@ -6,12 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Employee unique ={"foobar"} />
-      <Employee unique = {"foo"}/>
-      <Employee unique = {"gale"} />
-      <Employee unique = {"boot"} />
-      <Employee unique = {"wham"} />
-     
+      <Employee unique ={"foobar"} />  
     </div>
   );
 }
