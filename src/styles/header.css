@@ -1,0 +1,23 @@
+.header {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 16rem;
+    background-position: center;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+h3 {
+    font-style: italic;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
