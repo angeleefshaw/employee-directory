@@ -1,6 +1,6 @@
   ## Employee Directory 
   
-  https://angeleefshaw.github.io/employee-directory/
+
   
   ## Table of Contents
   1. [Overview](#Overview)
