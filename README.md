@@ -1,21 +1,21 @@
-## Employee Directory 
+  ## Employee Directory 
   
+  https://angeleefshaw.github.io/employee-directory/
   
   ## Table of Contents
   1. [Overview](#Overview)
-  2. [Usage](#Usage)
-  3. [Tools](#Tools)
-  4. [License](#License)
-  5. [Contributing](#Contributing)
-  6. [Questions](#Questions)
+  2. [Tools](#Tools)
+  3. [License](#License)
+  4. [Contributing](#Contributing)
+  5. [Questions](#Questions)
   
   ## Overview 
+  
+  View non-sensitive dummy data for a mock employee directory.
 
-  
-  ## Usage
-  
   ## Technology Used
   
+  This Application was built with React, HTML, CSS, and the Random User Generator API.
   
   ## License
   This project operates under the MIT license
