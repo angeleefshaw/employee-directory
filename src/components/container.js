@@ -11,7 +11,7 @@ export default function Container() {
 
     function searchDirectory() {
         
-        console.log("got the input")
+        console.log(search)
         //map through array of names from <GetData /> somehow
         //
     }
